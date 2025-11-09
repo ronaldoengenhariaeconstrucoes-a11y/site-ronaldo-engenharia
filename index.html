@@ -1,2 +1,154 @@
 <!doctype html>
-<html>... truncated for brevity ...</html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0d10" />
+  <meta name="description" content="Financiamento para construção – Ronaldo Engenharia e Construções Ltda. Modelo MCMV Faixa 1 (42 m²)." />
+  <title>Ronaldo Engenharia e Construções Ltda.</title>
+  <!-- 🔧 IMPORTANTE no GitHub Pages: use caminhos RELATIVOS (sem barra no início) -->
+  <link rel="icon" type="image/png" href="logo_favicon.png" />
+  <style>
+    :root{
+      --bg:#0b0d10;      /* fundo escuro premium */
+      --paper:#12161c;   /* cards */
+      --muted:#9fb0c0;   /* texto secundário */
+      --brand:#f6c12b;   /* amarelo da marca */
+      --brand-ink:#e5b21c;
+      --ink:#e8edf2;     /* texto principal */
+      --ring: rgba(246,193,43,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;}
+    body{
+      margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial; 
+      color:var(--ink); background:linear-gradient(180deg,var(--bg),#0e1217 40%, #10151b);
+    }
+    a{color:inherit}
+    .container{max-width:1200px;margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .logo img{height:40px;width:auto}
+    .brand{font-weight:700;letter-spacing:.5px}
+    .sub{font-size:12px;color:var(--muted)}
+
+    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:48px 0}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(246,193,43,.1);border:1px solid var(--ring);color:var(--brand);padding:6px 10px;border-radius:999px;font-size:12px}
+    h1{margin:.2em 0 .3em;font-size:clamp(28px,5vw,44px);line-height:1.1}
+    p.lead{margin:0 0 20px;color:var(--muted);font-size:clamp(14px,2.5vw,18px)}
+    .cta{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{appearance:none;border:0;border-radius:12px;padding:14px 18px;font-weight:600;cursor:pointer;transition:.2s transform,.2s box-shadow}
+    .btn:focus{outline:2px solid var(--ring);outline-offset:2px}
+    .btn-primary{background:var(--brand);color:#1b1b1b}
+    .btn-primary:hover{background:var(--brand-ink)}
+    .btn-ghost{background:transparent;border:1px solid #27303a;color:var(--ink)}
+    .btn-ghost:hover{border-color:#3a4654}
+
+    .card{background:var(--paper);border:1px solid #1c232c;border-radius:16px;overflow:hidden}
+    .card > .row{display:grid;grid-template-columns:1fr 1fr}
+    .card h2{font-size:22px;margin:0 0 6px}
+    .card p{margin:0;color:var(--muted)}
+    figure{margin:0}
+    .plan{display:grid;grid-template-columns:1fr;gap:18px;padding:22px}
+    .plan ul{margin:0;padding-left:18px}
+    .plan li{margin:6px 0;color:var(--ink)}
+    .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .meta span{background:#0f141a;border:1px solid #1f2833;border-radius:999px;padding:6px 10px;color:var(--muted);font-size:12px}
+
+    .footer{margin:48px 0 16px;color:#93a4b5;font-size:13px}
+    .footer a{color:#cfe1f4}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr;}
+      .card > .row{grid-template-columns:1fr}
+      .cta{justify-content:stretch}
+      .btn{width:100%;text-align:center}
+    }
+  </style>
+</head>
+<body>
+  <header class="container nav" aria-label="Topo do site">
+    <a class="logo" href="#inicio">
+      <img src="logo_header_dark.png" alt="Logo Ronaldo Engenharia" />
+      <div>
+        <div class="brand">RONALDO ENGENHARIA</div>
+        <div class="sub">Construções Ltda.</div>
+      </div>
+    </a>
+    <nav aria-label="Navegação principal">
+      <a class="sub" href="#modelo">Modelo MCMV</a>
+      <span aria-hidden="true">•</span>
+      <a class="sub" href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="inicio" class="container">
+    <section class="hero" aria-labelledby="titulo-principal">
+      <div>
+        <div class="badge" aria-label="Financiamento caixa">Financiamento • Minha Casa Minha Vida</div>
+        <h1 id="titulo-principal">Construa sua casa com financiamento organizado e obra sem dor de cabeça</h1>
+        <p class="lead">Acompanhamento técnico completo: projeto, orçamento, cronograma e execução com padrões de qualidade. Atendemos MCMV, SBPE e obras particulares.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://wa.me/5582993351534?text=Quero%20come%C3%A7ar%20minha%20conquista" target="_blank" rel="noopener" aria-label="Abrir conversa no WhatsApp">Comece a sua conquista</a>
+          <a class="btn btn-ghost" href="#modelo">Conheça o processo</a>
+        </div>
+      </div>
+      <figure class="card" aria-label="Modelo da planta">
+        <img src="planta-mcmv-faixa1-800.jpg" alt="Planta baixa do modelo econômico 42 m² – 2 quartos, 1 banheiro, sala e cozinha integrada" style="width:100%;height:auto;display:block" />
+      </figure>
+    </section>
+
+    <section id="modelo" class="card" aria-label="Modelo MCMV Faixa 1">
+      <div class="row">
+        <figure>
+          <img src="planta-mcmv-faixa1-800.jpg" alt="Planta 42 m² – vista superior" style="width:100%;height:auto;display:block" />
+        </figure>
+        <div class="plan">
+          <header>
+            <h2>MCMV Faixa 1 – 42 m²</h2>
+            <p>Tipologia: 2 quartos • 1 banheiro • Sala/cozinha integrada</p>
+          </header>
+          <ul>
+            <li>Projeto otimizado para custo e execução.</li>
+            <li>Compatibilização para reduzir retrabalhos.</li>
+            <li>Assistência no enquadramento e documentação.</li>
+            <li>Orçamento e cronograma detalhados.</li>
+          </ul>
+          <div class="meta" role="list" aria-label="Resumo de dados">
+            <span role="listitem">Área construída: 42,00 m²</span>
+            <span role="listitem">Categoria: MCMV – modelo econômico</span>
+            <span role="listitem">Atendimento em Alagoas</span>
+          </div>
+          <div class="cta">
+            <a class="btn btn-primary" href="https://wa.me/5582993351534?text=Quero%20simular%20meu%20financiamento" target="_blank" rel="noopener">Falar no WhatsApp</a>
+            <a class="btn btn-ghost" href="#contato">Ver contatos</a>
+          </div>
+          <!-- A ficha PDF foi enviada, mas o cliente prefere não exibir link direto. Se desejar, basta descomentar a linha abaixo. -->
+          <!-- <a class="sub" href="planta-mcmv-faixa1-ficha.pdf" target="_blank" rel="noopener">Abrir ficha técnica (PDF)</a> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="container" style="padding:36px 0 0">
+      <div class="card" style="padding:22px">
+        <h2 style="margin:0 0 10px">Contato</h2>
+        <p class="lead" style="margin:0 0 10px">Ronaldo Engenharia e Construções Ltda. • CNPJ 55.350.766/0001-98</p>
+        <p style="margin:0 0 12px">WhatsApp: <a href="https://wa.me/5582993351534" target="_blank" rel="noopener" aria-label="Abrir conversa no WhatsApp">(82) 9 9335‑1534</a></p>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://wa.me/5582993351534?text=Ol%C3%A1%2C%20gostaria%20de%20um%20atendimento" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container footer" aria-label="Rodapé">
+      <div>© <span id="year"></span> Ronaldo Engenharia e Construções Ltda. • Todos os direitos reservados.</div>
+      <div>Este site utiliza apenas HTML/CSS. Para hospedagem no GitHub Pages, mantenha os arquivos <em>index.html</em>, <em>logo_favicon.png</em>, <em>logo_header_dark.png</em> e <em>planta-mcmv-faixa1-800.jpg</em> na mesma pasta do repositório.</div>
+    </footer>
+  </main>
+
+  <script>
+    // Atualiza ano automático
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
