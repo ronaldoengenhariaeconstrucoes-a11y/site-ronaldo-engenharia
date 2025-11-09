@@ -2,153 +2,304 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b0d10" />
-  <meta name="description" content="Financiamento para construção – Ronaldo Engenharia e Construções Ltda. Modelo MCMV Faixa 1 (42 m²)." />
-  <title>Ronaldo Engenharia e Construções Ltda.</title>
-  <!-- 🔧 IMPORTANTE no GitHub Pages: use caminhos RELATIVOS (sem barra no início) -->
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ronaldo Engenharia e Construções — Construa sua conquista</title>
+  <meta name="description" content="Projetos, execução e acompanhamento técnico para construção e reforma financiadas pela CAIXA. Do projeto até a entrega." />
   <link rel="icon" type="image/png" href="logo_favicon.png" />
   <style>
     :root{
-      --bg:#0b0d10;      /* fundo escuro premium */
-      --paper:#12161c;   /* cards */
-      --muted:#9fb0c0;   /* texto secundário */
-      --brand:#f6c12b;   /* amarelo da marca */
-      --brand-ink:#e5b21c;
-      --ink:#e8edf2;     /* texto principal */
-      --ring: rgba(246,193,43,.35);
+      --bg:#071318; --panel:#0b1416; --muted:#9fb6b6; --accent:#f2a520; --accent-2:#0f5660; --card:#0e1a1b;
+      --maxw:1100px; --radius:12px; --shadow: 0 10px 30px rgba(0,0,0,0.6); font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    *{box-sizing:border-box}
-    html,body{height:100%;}
-    body{
-      margin:0; font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial; 
-      color:var(--ink); background:linear-gradient(180deg,var(--bg),#0e1217 40%, #10151b);
-    }
-    a{color:inherit}
-    .container{max-width:1200px;margin:0 auto;padding:24px}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
-    .logo img{height:40px;width:auto}
-    .brand{font-weight:700;letter-spacing:.5px}
-    .sub{font-size:12px;color:var(--muted)}
-
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:32px;align-items:center;padding:48px 0}
-    .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(246,193,43,.1);border:1px solid var(--ring);color:var(--brand);padding:6px 10px;border-radius:999px;font-size:12px}
-    h1{margin:.2em 0 .3em;font-size:clamp(28px,5vw,44px);line-height:1.1}
-    p.lead{margin:0 0 20px;color:var(--muted);font-size:clamp(14px,2.5vw,18px)}
-    .cta{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{appearance:none;border:0;border-radius:12px;padding:14px 18px;font-weight:600;cursor:pointer;transition:.2s transform,.2s box-shadow}
-    .btn:focus{outline:2px solid var(--ring);outline-offset:2px}
-    .btn-primary{background:var(--brand);color:#1b1b1b}
-    .btn-primary:hover{background:var(--brand-ink)}
-    .btn-ghost{background:transparent;border:1px solid #27303a;color:var(--ink)}
-    .btn-ghost:hover{border-color:#3a4654}
-
-    .card{background:var(--paper);border:1px solid #1c232c;border-radius:16px;overflow:hidden}
-    .card > .row{display:grid;grid-template-columns:1fr 1fr}
-    .card h2{font-size:22px;margin:0 0 6px}
-    .card p{margin:0;color:var(--muted)}
-    figure{margin:0}
-    .plan{display:grid;grid-template-columns:1fr;gap:18px;padding:22px}
-    .plan ul{margin:0;padding-left:18px}
-    .plan li{margin:6px 0;color:var(--ink)}
-    .meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
-    .meta span{background:#0f141a;border:1px solid #1f2833;border-radius:999px;padding:6px 10px;color:var(--muted);font-size:12px}
-
-    .footer{margin:48px 0 16px;color:#93a4b5;font-size:13px}
-    .footer a{color:#cfe1f4}
-
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr;}
-      .card > .row{grid-template-columns:1fr}
-      .cta{justify-content:stretch}
-      .btn{width:100%;text-align:center}
-    }
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:#e9f7f7;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.5}
+    a{color:inherit} .wrap{max-width:var(--maxw);margin:0 auto;padding:20px;}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0;background:var(--panel);border-radius:10px;padding:12px 20px;box-shadow:var(--shadow)}
+    .logo{display:flex;align-items:center;gap:12px} .logo img{height:54px;object-fit:contain}
+    nav{display:flex;gap:18px;align-items:center} nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:15px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;font-weight:700;text-decoration:none;cursor:pointer}
+    .btn-primary{background:var(--accent);color:#071a1b} .btn-ghost{background:transparent;border:2px solid transparent;color:var(--accent);padding:8px 12px}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:28px 0 10px} .hero-inner{display:flex;flex-direction:column;gap:18px}
+    .eyebrow{color:var(--accent);font-weight:700;font-size:13px} h1{font-size:34px;margin:0;color:#f3f7f7;line-height:1.06}
+    p.lead{color:var(--muted);margin:0;font-size:16px;max-width:680px} .hero-ctas{display:flex;gap:12px;flex-wrap:wrap}
+    .hero-visual{border-radius:14px;overflow:hidden;background:linear-gradient(180deg, rgba(242,165,32,0.06), rgba(15,86,96,0.02));min-height:220px;display:flex;align-items:center;justify-content:center;box-shadow:0 20px 60px rgba(0,0,0,0.6)}
+    .hero-visual img{width:100%;height:100%;object-fit:cover;filter:grayscale(0) contrast(0.95)}
+    .emotion{margin:28px 0;background:linear-gradient(90deg, rgba(15,86,96,0.03), rgba(242,139,32,0.02));border-radius:12px;padding:24px;box-shadow:var(--shadow)} .emotion p{font-size:17px;color:#eaf6f6;margin:0}
+    .emotion .cta-row{margin-top:18px} .grid-3{display:grid;grid-template-columns:1fr;gap:14px;margin:26px 0}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.4)}
+    .card h3{margin:0 0 8px 0;color:#f3f7f7} .card p{margin:0;color:var(--muted);font-size:14px}
+    .portfolio{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:22px 0} .portfolio .item{height:140px;border-radius:8px;overflow:hidden;background:#222;display:flex;align-items:end;padding:12px;color:#fff;font-weight:700}
+    .cta-band{background:linear-gradient(90deg,#091b1b,#0b2626);color:#fff;padding:22px;border-radius:10px;margin:28px 0;display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:var(--shadow)}
+    .mini-auth{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:18px} footer{border-top:1px solid rgba(255,255,255,0.04);padding:28px 0;margin-top:34px;color:var(--muted);font-size:14px}
+    .flex{display:flex;gap:12px;align-items:center} .modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.72);display:none;align-items:center;justify-content:center;padding:18px;z-index:60}
+    .modal{background:var(--panel);padding:20px;border-radius:10px;max-width:760px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,0.6)} .modal h4{margin:0 0 8px 0;color:var(--accent)} .modal p{margin:0 0 12px 0;color:var(--muted)} .close{background:transparent;border:0;font-size:20px;cursor:pointer;color:var(--muted)}
+    .whatsapp-fab{position: fixed; bottom: 22px; right: 22px; background:#25D366; width:64px; height:64px; border-radius: 50%; display:flex; align-items:center; justify-content:center; box-shadow: 0 10px 30px rgba(0,0,0,0.4); z-index:1200; text-decoration:none;} .whatsapp-fab img{width:34px;height:34px}
+    @media(min-width:900px){ .hero{grid-template-columns:1fr 480px} h1{font-size:44px} .grid-3{grid-template-columns:repeat(3,1fr)} .portfolio{grid-template-columns:repeat(4,1fr)} }
+    input, textarea, select{background:transparent;border:1px solid rgba(255,255,255,0.06);color:#e9f7f7;padding:10px;border-radius:8px} button, .btn {outline:none}
   </style>
 </head>
 <body>
-  <header class="container nav" aria-label="Topo do site">
-    <a class="logo" href="#inicio">
-      <img src="logo_header_dark.png" alt="Logo Ronaldo Engenharia" />
-      <div>
-        <div class="brand">RONALDO ENGENHARIA</div>
-        <div class="sub">Construções Ltda.</div>
+  <header class="wrap" role="banner" aria-label="Cabeçalho">
+    <div class="logo" aria-hidden="false">
+      <img src="logo_header_dark.png" alt="Ronaldo Engenharia e Construções — logo" />
+      <div style="line-height:1">
+        <div style="font-weight:800;color:#e6f7f7">Ronaldo Engenharia</div>
+        <div style="font-size:12px;color:var(--muted)">Engenharia · Obras · Perícia</div>
       </div>
-    </a>
-    <nav aria-label="Navegação principal">
-      <a class="sub" href="#modelo">Modelo MCMV</a>
-      <span aria-hidden="true">•</span>
-      <a class="sub" href="#contato">Contato</a>
+    </div>
+
+    <nav aria-label="Menu principal">
+      <a href="#inicio">Início</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#simular">Simular</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-primary" href="https://wa.me/5582993351534?text=Ol%C3%A1%2C+quero+iniciar+minha+constru%C3%A7%C3%A3o" target="_blank" rel="noopener">Quero iniciar minha construção</a>
     </nav>
   </header>
 
-  <main id="inicio" class="container">
-    <section class="hero" aria-labelledby="titulo-principal">
+  <main class="wrap" id="inicio" style="padding-top:18px">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="eyebrow">Construção com apoio da CAIXA · Engenharia responsável</div>
+        <h1 id="hero-title">O lugar que você imagina merece sair do papel</h1>
+        <p class="lead">Projetos, execução e acompanhamento técnico para transformar planos em obra com segurança, clareza e propósito.</p>
+
+        <div class="hero-ctas" role="group" aria-label="Ações principais">
+          <a class="btn btn-primary" href="https://wa.me/5582993351534?text=Ol%C3%A1%2C+quero+iniciar+minha+constru%C3%A7%C3%A3o" target="_blank" rel="noopener">Quero iniciar minha construção</a>
+          <button class="btn" id="open-process" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 12px;border-radius:10px">Conheça o processo</button>
+        </div>
+
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">
+          Atendimento especializado em São Miguel dos Campos e região · CREA e responsabilidade técnica garantida
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1200&q=60" alt="Casa em construção — ilustração de projeto" />
+      </div>
+    </section>
+
+    <!-- BLOCO EMOCIONAL -->
+    <section class="emotion" aria-labelledby="emotion-title">
+      <h2 id="emotion-title" style="margin:0 0 8px 0;font-size:18px;color:var(--accent)">A conquista que se sente</h2>
+      <p>
+        Chega um dia em que a gente percebe que alguns sonhos não nasceram para ficar no rascunho.
+        Eles pedem espaço, forma e materiais de verdade. Pedem alicerces, planejamento e uma equipe
+        que transforme intenção em construção.
+        <br/><br/>
+        A conquista começa quando a decisão é tomada. Quando a ideia ganha desenho, o desenho vira projeto,
+        o projeto vira obra e, pouco a pouco, tudo começa a fazer sentido. Cada etapa vencida vira prova silenciosa.
+      </p>
+
+      <div class="cta-row" style="display:flex;gap:12px;margin-top:10px">
+        <a class="btn btn-primary" href="https://wa.me/5582993351534?text=Ol%C3%A1%2C+quero+iniciar+minha+constru%C3%A7%C3%A3o" target="_blank" rel="noopener">Quero iniciar minha construção</a>
+        <a class="btn" href="#servicos" style="border:2px solid rgba(255,255,255,0.06);color:var(--muted);padding:8px 12px;border-radius:10px;text-decoration:none">Ver serviços</a>
+      </div>
+    </section>
+
+    <!-- 3 PILARES -->
+    <section id="servicos" aria-labelledby="servicos-title">
+      <h2 id="servicos-title" style="margin-top:20px;color:#e9f7f7">Como tornamos isso possível</h2>
+      <div class="grid-3" role="list">
+        <article class="card" role="listitem" aria-labelledby="p1">
+          <h3 id="p1">Projeto e Planejamento</h3>
+          <p>Plantas, memoriais e orçamentos detalhados que antecipam erros e reduzem custo e retrabalho.</p>
+        </article>
+
+        <article class="card" role="listitem" aria-labelledby="p2">
+          <h3 id="p2">Engenharia e Obra</h3>
+          <p>Execução com responsabilidade técnica, cronograma físico-financeiro e fiscalização constante.</p>
+        </article>
+
+        <article class="card" role="listitem" aria-labelledby="p3">
+          <h3 id="p3">Acompanhamento Completo</h3>
+          <p>Vistorias, relatórios técnicos e apoio durante a análise do financiamento — da documentação até a vistoria final.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PORTFÓLIO SIMPLES -->
+    <section aria-labelledby="port-title">
+      <h2 id="port-title">Obras que contam histórias</h2>
+      <div class="portfolio" role="list">
+        <div class="item" style="background-image:url('planta-mcmv-faixa1-800.jpg');background-size:cover;background-position:center" role="listitem">Modelo MCMV Faixa 1</div>
+        <div class="item" style="background-image:url('https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=800&q=60');background-size:cover;" role="listitem">Reforma e acabamento</div>
+        <div class="item" style="background-image:url('https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60');background-size:cover;" role="listitem">Planejamento técnico</div>
+        <div class="item" style="background-image:url('https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=800&q=60');background-size:cover;" role="listitem">Entrega e vistoria</div>
+      </div>
+    </section>
+
+    <!-- BLOCO: Planta MCMV Faixa 1 (destaque) -->
+    <section id="planta-mcmv" style="margin:32px 0;background:#081213;padding:20px;border-radius:12px;">
+      <div style="max-width:1100px;margin:0 auto;padding:6px;color:#e6f7f7;">
+        <div style="display:flex;gap:18px;align-items:flex-start;flex-wrap:wrap;">
+          <div style="flex:1;min-width:280px;">
+            <h3 style="margin:0 0 8px 0;color:var(--accent);">Planta MCMV — Faixa 1: solução econômica e eficiente</h3>
+            <p style="color:#cfe8e8;max-width:640px;margin:0 0 12px 0;">
+              Um modelo pensado para reduzir custos sem abrir mão da qualidade: projeto funcional, compatibilizado e otimizado para programas habitacionais. Ideal para quem busca um bom custo-benefício e maior chance de enquadramento.
+            </p>
+
+            <div style="display:flex;gap:10px;margin-top:10px">
+              <button onclick="openPlantModal()" style="background:var(--accent);border:none;padding:10px 14px;border-radius:8px;font-weight:700;cursor:pointer;color:#071a1b">Ver detalhes da planta</button>
+              <a href="planta-mcmv-faixa1-ficha.pdf" download style="background:transparent;border:2px solid var(--accent);color:var(--accent);padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700">Baixar ficha técnica (PDF)</a>
+            </div>
+
+            <p style="font-size:12px;color:#9fb6b6;margin-top:10px;">
+              <em>Observação:</em> condições de financiamento e subsídios dependem de avaliação da CAIXA e do enquadramento do beneficiário.
+            </p>
+          </div>
+
+          <div style="width:360px;min-width:220px;">
+            <img src="planta-mcmv-faixa1-800.jpg" alt="Planta arquitetônica do modelo MCMV Faixa 1 — projeto econômico com 2 quartos, sala e cozinha integradas." style="width:100%;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.6)" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" role="region" aria-label="Chamada para ação">
       <div>
-        <div class="badge" aria-label="Financiamento caixa">Financiamento • Minha Casa Minha Vida</div>
-        <h1 id="titulo-principal">Construa sua casa com financiamento organizado e obra sem dor de cabeça</h1>
-        <p class="lead">Acompanhamento técnico completo: projeto, orçamento, cronograma e execução com padrões de qualidade. Atendemos MCMV, SBPE e obras particulares.</p>
-        <div class="cta">
-          <a class="btn btn-primary" href="https://wa.me/5582993351534?text=Quero%20come%C3%A7ar%20minha%20conquista" target="_blank" rel="noopener" aria-label="Abrir conversa no WhatsApp">Comece a sua conquista</a>
-          <a class="btn btn-ghost" href="#modelo">Conheça o processo</a>
-        </div>
+        <div style="font-weight:800;font-size:18px">A sua próxima conquista começa com a decisão de iniciar.</div>
+        <div style="font-size:13px;color:#cfe8e8">Vamos estruturar o seu projeto com segurança técnica e clareza.</div>
       </div>
-      <figure class="card" aria-label="Modelo da planta">
-        <img src="planta-mcmv-faixa1-800.jpg" alt="Planta baixa do modelo econômico 42 m² – 2 quartos, 1 banheiro, sala e cozinha integrada" style="width:100%;height:auto;display:block" />
-      </figure>
+      <div>
+        <a class="btn btn-primary" href="https://wa.me/5582993351534?text=Ol%C3%A1%2C+quero+iniciar+minha+constru%C3%A7%C3%A3o" target="_blank" rel="noopener">Quero iniciar minha construção</a>
+      </div>
     </section>
 
-    <section id="modelo" class="card" aria-label="Modelo MCMV Faixa 1">
-      <div class="row">
-        <figure>
-          <img src="planta-mcmv-faixa1-800.jpg" alt="Planta 42 m² – vista superior" style="width:100%;height:auto;display:block" />
-        </figure>
-        <div class="plan">
-          <header>
-            <h2>MCMV Faixa 1 – 42 m²</h2>
-            <p>Tipologia: 2 quartos • 1 banheiro • Sala/cozinha integrada</p>
-          </header>
-          <ul>
-            <li>Projeto otimizado para custo e execução.</li>
-            <li>Compatibilização para reduzir retrabalhos.</li>
-            <li>Assistência no enquadramento e documentação.</li>
-            <li>Orçamento e cronograma detalhados.</li>
-          </ul>
-          <div class="meta" role="list" aria-label="Resumo de dados">
-            <span role="listitem">Área construída: 42,00 m²</span>
-            <span role="listitem">Categoria: MCMV – modelo econômico</span>
-            <span role="listitem">Atendimento em Alagoas</span>
+    <!-- MINI-AUTORIDADE -->
+    <section aria-labelledby="auth">
+      <h3 id="auth" style="margin:8px 0;color:#e9f7f7">Por que escolher a Ronaldo Engenharia</h3>
+      <div class="mini-auth">
+        <div class="card" style="padding:12px">
+          <strong>Responsabilidade Técnica</strong>
+          <div style="font-size:13px;color:var(--muted)">CREA, ART e laudos quando necessário</div>
+        </div>
+        <div class="card" style="padding:12px">
+          <strong>Projetos compatíveis</strong>
+          <div style="font-size:13px;color:var(--muted)">Compatibilização arquitetônica e estrutural</div>
+        </div>
+        <div class="card" style="padding:12px">
+          <strong>Acompanhamento integrado</strong>
+          <div style="font-size:13px;color:var(--muted)">Cronograma físico-financeiro e vistorias periódicas</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FECHAMENTO / CONTATO -->
+    <section id="contato" aria-labelledby="contato-title" style="margin-top:18px">
+      <h2 id="contato-title">Quando começa a sua conquista, tudo muda</h2>
+      <p style="color:var(--muted);max-width:640px">O primeiro passo é abrir o diálogo. Preencha o formulário ou fale conosco pelo WhatsApp para uma pré-avaliação sem compromisso.</p>
+
+      <!-- Formulário simplificado (substituir por ação real no backend) -->
+      <form action="#" method="post" style="display:grid;gap:10px;max-width:640px;margin-top:12px">
+        <input type="text" name="nome" placeholder="Nome completo" required />
+        <input type="tel" name="whatsapp" placeholder="WhatsApp (com DDD)" required />
+        <input type="email" name="email" placeholder="E-mail" />
+        <select name="interesse">
+          <option value="">Interesse</option>
+          <option value="construcao">Construção financiada</option>
+          <option value="reforma">Reforma financiada</option>
+          <option value="pericia">Perícia / Laudo</option>
+        </select>
+        <textarea name="mensagem" placeholder="Conte-nos seu objetivo (opcional)" style="min-height:100px"></textarea>
+        <div style="display:flex;gap:10px">
+          <button class="btn btn-primary" type="submit">Solicitar Pré-avaliação</button>
+          <a class="btn" href="https://wa.me/5582993351534?text=Ol%C3%A9%2C+gostaria+de+uma+pr%C3%A9-avalia%C3%A7%C3%A3o" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,0.06);padding:8px 12px">Abrir WhatsApp</a>
+        </div>
+      </form>
+    </section>
+
+    <footer class="wrap" role="contentinfo">
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+        <div>
+          <div style="font-weight:800;color:#e6f7f7">Ronaldo Engenharia e Construções Ltda.</div>
+          <div style="font-size:13px;color:var(--muted)">CNPJ: 55.350.766/0001-98 · CREA: XXXX</div>
+          <div style="font-size:13px;color:var(--muted)">Atuação: São Miguel dos Campos e região</div>
+        </div>
+
+        <div style="text-align:right">
+          <div style="margin-bottom:8px">Links rápidos</div>
+          <div style="display:flex;gap:8px;justify-content:flex-end">
+            <a href="#servicos" style="color:var(--muted);text-decoration:none">Serviços</a>
+            <a href="#como-funciona" style="color:var(--muted);text-decoration:none">Como funciona</a>
+            <a href="https://wa.me/5582993351534" style="color:var(--muted);text-decoration:none" target="_blank" rel="noopener">WhatsApp</a>
           </div>
-          <div class="cta">
-            <a class="btn btn-primary" href="https://wa.me/5582993351534?text=Quero%20simular%20meu%20financiamento" target="_blank" rel="noopener">Falar no WhatsApp</a>
-            <a class="btn btn-ghost" href="#contato">Ver contatos</a>
-          </div>
-          <!-- A ficha PDF foi enviada, mas o cliente prefere não exibir link direto. Se desejar, basta descomentar a linha abaixo. -->
-          <!-- <a class="sub" href="planta-mcmv-faixa1-ficha.pdf" target="_blank" rel="noopener">Abrir ficha técnica (PDF)</a> -->
         </div>
       </div>
-    </section>
-
-    <section id="contato" class="container" style="padding:36px 0 0">
-      <div class="card" style="padding:22px">
-        <h2 style="margin:0 0 10px">Contato</h2>
-        <p class="lead" style="margin:0 0 10px">Ronaldo Engenharia e Construções Ltda. • CNPJ 55.350.766/0001-98</p>
-        <p style="margin:0 0 12px">WhatsApp: <a href="https://wa.me/5582993351534" target="_blank" rel="noopener" aria-label="Abrir conversa no WhatsApp">(82) 9 9335‑1534</a></p>
-        <div class="cta">
-          <a class="btn btn-primary" href="https://wa.me/5582993351534?text=Ol%C3%A1%2C%20gostaria%20de%20um%20atendimento" target="_blank" rel="noopener">Chamar no WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="container footer" aria-label="Rodapé">
-      <div>© <span id="year"></span> Ronaldo Engenharia e Construções Ltda. • Todos os direitos reservados.</div>
-      <div>Este site utiliza apenas HTML/CSS. Para hospedagem no GitHub Pages, mantenha os arquivos <em>index.html</em>, <em>logo_favicon.png</em>, <em>logo_header_dark.png</em> e <em>planta-mcmv-faixa1-800.jpg</em> na mesma pasta do repositório.</div>
     </footer>
   </main>
 
+  <!-- MODAL: Conheça o processo -->
+  <div id="modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal" role="document" aria-labelledby="modal-title">
+      <div style="display:flex;justify-content:space-between;align-items:center">
+        <h4 id="modal-title">Conheça o processo</h4>
+        <button class="close" id="close-modal" aria-label="Fechar">✕</button>
+      </div>
+      <p>Em algumas modalidades de apoio governamental, o financiamento pode contar com subsídios que reduzem o valor a financiar e amortizações que fazem as prestações diminuírem ao longo do contrato. Isso possibilita um investimento inicial viável e prestações que tendem a ficar mais leves com o tempo.</p>
+
+      <p style="font-size:13px;color:var(--muted)">Cada caso exige análise: renda familiar, matrícula do terreno, projeto aprovado e avaliação do agente financeiro são determinantes. Nosso papel é preparar o processo técnico — projetos, cronograma físico-financeiro, documentação e acompanhamento — para que sua jornada ocorra com clareza e segurança.</p>
+
+      <div style="display:flex;justify-content:flex-end;gap:10px;margin-top:14px">
+        <a class="btn" href="https://wa.me/5582993351534?text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+o+processo" target="_blank" rel="noopener" style="border:1px solid rgba(255,255,255,0.06);padding:8px 12px;color:var(--muted);text-decoration:none">Falar com um especialista</a>
+        <button class="btn btn-primary" id="modal-close-cta">Quero iniciar minha construção</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Planta MCMV Faixa 1 -->
+  <div id="plant-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.72);align-items:center;justify-content:center;padding:20px;z-index:120;">
+    <div style="max-width:900px;width:100%;background:#071a1b;color:#e9f7f7;padding:20px;border-radius:10px;position:relative;">
+      <button onclick="closePlantModal()" aria-label="Fechar" style="position:absolute;right:14px;top:14px;background:transparent;border:0;color:#cfe8e8;font-size:20px;cursor:pointer">✕</button>
+      <h3 style="margin-top:0;color:var(--accent)">Ficha técnica — Planta MCMV Faixa 1</h3>
+      <p style="color:#cfe8e8">Área construída: <strong>42,00 m²</strong> · Tipologia: <strong>2 quartos · 1 banheiro · sala-cozinha integrada</strong></p>
+      <ul style="color:#cfe8e8">
+        <li>Projeto otimizado para custo e execução.</li>
+        <li>Compatibilização arquitetônica e estrutural para reduzir retrabalhos.</li>
+        <li>Estimativa preliminar de orçamento disponível mediante solicitação.</li>
+      </ul>
+      <p style="color:#b9d9d9;font-size:13px"><em>Observação:</em> valores e enquadramentos dependem de análise da CAIXA. Entre em contato para avaliação personalizada.</p>
+      <div style="display:flex;gap:10px;margin-top:12px">
+        <a href="planta-mcmv-faixa1-ficha.pdf" download style="background:var(--accent);padding:10px 14px;border-radius:8px;font-weight:700;color:#071a1b;text-decoration:none">Baixar ficha técnica (PDF)</a>
+        <a href="https://wa.me/5582993351534?text=Ol%C3%A1%2C+gostaria+de+uma+avalia%C3%A7%C3%A3o+personalizada+da+planta+MCMV+Faixa+1" target="_blank" rel="noopener" style="background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:8px;color:var(--muted);text-decoration:none">Solicitar avaliação personalizada</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP -->
+  <a class="whatsapp-fab" href="https://wa.me/5582993351534?text=Ol%C3%A1%2C+quero+iniciar+minha+constru%C3%A7%C3%A3o" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+  </a>
+
   <script>
-    // Atualiza ano automático
-    document.getElementById('year').textContent = new Date().getFullYear();
+    const openBtn = document.getElementById('open-process');
+    const modal = document.getElementById('modal');
+    const closeBtn = document.getElementById('close-modal');
+    const modalCloseCta = document.getElementById('modal-close-cta');
+
+    function openModal(){ modal.style.display = 'flex'; modal.setAttribute('aria-hidden','false'); if(closeBtn) closeBtn.focus(); }
+    function closeModal(){ modal.style.display = 'none'; modal.setAttribute('aria-hidden','true'); if(openBtn) openBtn.focus(); }
+    if(openBtn) openBtn.addEventListener('click', openModal);
+    if(closeBtn) closeBtn.addEventListener('click', closeModal);
+    if(modalCloseCta) modalCloseCta.addEventListener('click', () => { closeModal(); window.open('https://wa.me/5582993351534?text=Ol%C3%A1%2C+quero+iniciar+minha+constru%C3%A7%C3%A3o','_blank') });
+
+    function openPlantModal(){ document.getElementById('plant-modal').style.display = 'flex'; document.getElementById('plant-modal').setAttribute('aria-hidden','false'); }
+    function closePlantModal(){ document.getElementById('plant-modal').style.display = 'none'; document.getElementById('plant-modal').setAttribute('aria-hidden','true'); }
+
+    document.addEventListener('keydown', (e) => {
+      if(e.key === 'Escape') {
+        if(modal.style.display === 'flex') closeModal();
+        if(document.getElementById('plant-modal').style.display === 'flex') closePlantModal();
+      }
+    });
+
+    // clique fora fecha modal
+    const modalEl = document.getElementById('modal');
+    if(modalEl) modalEl.addEventListener('click', (e) => { if(e.target === modalEl) closeModal(); });
+    const plantModalEl = document.getElementById('plant-modal');
+    if(plantModalEl) plantModalEl.addEventListener('click', (e) => { if(e.target === plantModalEl) closePlantModal(); });
   </script>
 </body>
 </html>
